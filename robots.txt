@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://openclaw-telegram.com/sitemap.xml
