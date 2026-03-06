@@ -1,0 +1,3 @@
+Contact: mailto:yanko@idrobots.com
+Preferred-Languages: en
+Canonical: https://openclaw-telegram.com/.well-known/security.txt

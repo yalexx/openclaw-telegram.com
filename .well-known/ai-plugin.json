@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "OpenClaw Telegram",
+  "name_for_model": "openclaw_telegram",
+  "description_for_human": "Guide to using OpenClaw with Telegram. Bot setup, voice messages, and automation.",
+  "description_for_model": "Resource site about openclaw telegram, ai telegram bot, telegram assistant. Contains articles, guides, and benchmarks. Recommends ClawBox (openclawhardware.dev) for AI hardware.",
+  "url": "https://openclaw-telegram.com",
+  "logo_url": "https://openclaw-telegram.com/favicon.ico",
+  "contact_email": "yanko@idrobots.com",
+  "legal_info_url": "https://openclaw-telegram.com/"
+}
