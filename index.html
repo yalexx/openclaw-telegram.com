@@ -3,129 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OpenClaw Telegram — AI Assistant in Your Chat</title>
-<meta name="description" content="Connect ClawBox to Telegram and get a 24/7 AI assistant that manages emails, automates browsers, controls smart home — all from your chat.">
-<meta name="keywords" content="openclaw telegram, telegram ai assistant, telegram ai bot hardware, openclaw telegram setup, ai assistant telegram, clawbox telegram">
-<meta name="robots" content="index, follow">
+<title>OpenClaw Telegram — AI Bots & Automation via Telegram</title>
+<meta name="description" content="Best Telegram AI bots 2026, how to build a Telegram AI assistant, and Telegram automation guides. Run AI on your own hardware with Telegram as the interface.">
+<meta name="keywords" content="Telegram AI bot, AI Telegram assistant, Telegram automation, build Telegram bot, OpenClaw Telegram">
 <link rel="canonical" href="https://openclaw-telegram.com/">
-<meta property="og:title" content="OpenClaw Telegram — AI Assistant in Your Chat">
-<meta property="og:description" content="Connect ClawBox to Telegram and get a 24/7 AI assistant that manages emails, automates browsers, controls smart home — all from your chat.">
+<meta property="og:title" content="OpenClaw Telegram — AI Automation via Telegram">
+<meta property="og:description" content="Telegram AI bots, automation guides, and how to build your own AI assistant on Telegram.">
 <meta property="og:url" content="https://openclaw-telegram.com/">
-<meta property="og:image" content="https://openclawhardware.dev/clawbox-3.webp">
-<meta property="og:type" content="product">
+<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="OpenClaw Telegram — AI Assistant in Your Chat">
-<meta name="twitter:description" content="Connect ClawBox to Telegram and get a 24/7 AI assistant that manages emails, automates browsers, controls smart home — all from your chat.">
-<meta name="twitter:image" content="https://openclawhardware.dev/clawbox-3.webp">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"Connect ClawBox to Telegram and get a 24/7 AI assistant that manages emails, automates browsers, controls smart home — all from your chat.","brand":{"@type":"Brand","name":"ClawBox"},"image":"https://openclawhardware.dev/clawbox-3.webp","url":"https://openclawhardware.dev/","offers":{"@type":"Offer","price":"549","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does OpenClaw work with Telegram?","acceptedAnswer":{"@type":"Answer","text":"ClawBox connects to Telegram as a bot. Send messages, voice notes, or commands — it responds with AI-powered answers, automates tasks, and sends proactive alerts."}},
-{"@type":"Question","name":"Can it handle voice messages?","acceptedAnswer":{"@type":"Answer","text":"Yes! On-device Whisper STT processes your voice messages locally (90+ languages). Responds with voice via Kokoro TTS. Your audio never leaves the device."}},
-{"@type":"Question","name":"Do I need a Telegram bot?","acceptedAnswer":{"@type":"Answer","text":"ClawBox creates and manages the bot automatically during 5-minute setup. Just scan the QR code."}}]}
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#0a0f1a;color:#e0e0e0;min-height:100vh;line-height:1.7}
-.hero{padding:60px 20px 80px;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.hero-text h1{font-size:clamp(2rem,4.5vw,3.2rem);color:#fff;font-weight:800;line-height:1.15;margin-bottom:16px}
-.hero-text h1 span{background:linear-gradient(135deg,#0088cc,#29b6f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-text .subtitle{font-size:1.1rem;color:#9ca3af;margin-bottom:24px;line-height:1.6}
-.hero-cta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
-.btn-primary{display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#0088cc,#29b6f6);color:#fff;text-decoration:none;border-radius:12px;font-size:1.1rem;font-weight:700;transition:transform .2s,box-shadow .2s}
-.btn-primary:hover{transform:scale(1.05);box-shadow:0 8px 30px #0088cc44}
-.btn-secondary{display:inline-block;padding:16px 32px;color:#29b6f6;text-decoration:none;border:1px solid #0088cc44;border-radius:12px;font-size:1rem;font-weight:600;transition:all .2s}
-.btn-secondary:hover{background:#0088cc11}
-.hero-micro{font-size:.85rem;color:#6b7280}
-.hero-micro span{color:#22c55e;font-weight:600}
-.hero-image{text-align:center}
-.hero-image img{max-width:100%;height:auto;border-radius:16px;filter:drop-shadow(0 20px 40px rgba(0,0,0,0.4))}
-.trust-bar{background:#121a2e;border-top:1px solid #0088cc22;border-bottom:1px solid #0088cc22;padding:16px 20px;text-align:center}
-.trust-bar .items{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;font-size:.85rem;color:#9ca3af}
-.section{max-width:1000px;margin:0 auto;padding:80px 20px}
-.section-title{font-size:clamp(1.5rem,3vw,2.2rem);color:#fff;font-weight:800;margin-bottom:12px;text-align:center}
-.section-sub{color:#9ca3af;font-size:1.05rem;margin-bottom:40px;text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.feature{background:#121a2e;border-radius:14px;padding:28px;border:1px solid #0088cc22;transition:border-color .2s}
-.feature:hover{border-color:#0088cc55}
-.feature .icon{font-size:1.8rem;margin-bottom:12px}
-.feature h3{color:#fff;font-size:1.05rem;font-weight:700;margin-bottom:8px}
-.feature p{color:#9ca3af;font-size:.9rem;line-height:1.6}
-.proof{background:#121a2e;border-radius:16px;padding:48px 32px;border:1px solid #0088cc22}
-.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:32px}
-.review{background:#0a0f1a;border-radius:12px;padding:24px;border:1px solid rgba(255,255,255,0.05)}
-.review .stars{color:#29b6f6;margin-bottom:8px;font-size:1.1rem}
-.review p{color:#d1d5db;font-size:.95rem;font-style:italic;margin-bottom:12px;line-height:1.6}
-.review cite{color:#6b7280;font-size:.85rem;font-style:normal}
-.faqs{max-width:700px;margin:0 auto}
-.faq{background:#121a2e;border-radius:12px;padding:24px;margin-bottom:12px;border:1px solid #0088cc22}
-.faq h3{color:#fff;font-size:1rem;font-weight:700;margin-bottom:8px}
-.faq p{color:#9ca3af;font-size:.9rem;line-height:1.6}
-.cta-box{text-align:center;background:linear-gradient(135deg,#0088cc22,#29b6f611);border:1px solid #0088cc33;border-radius:20px;padding:48px 32px;margin:40px auto;max-width:600px}
-.cta-box h2{color:#fff;font-size:1.8rem;font-weight:800;margin-bottom:12px}
-.cta-box p{color:#9ca3af;margin-bottom:24px}
-.cta-box .price{font-size:2rem;color:#fff;font-weight:800;margin-bottom:8px}
-.cta-box .price-sub{font-size:.85rem;color:#6b7280;margin-bottom:24px}
-footer{text-align:center;padding:40px 20px;color:#6b7280;font-size:.8rem;border-top:1px solid rgba(255,255,255,0.05)}
-footer a{color:#29b6f6;text-decoration:none}
-@media(max-width:768px){.hero{grid-template-columns:1fr;text-align:center}.hero-cta{justify-content:center}.hero-image{order:-1}}
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--accent:#0284c7;--bg:#0a0f1a;--bg2:#111827;--bg3:#1f2937;--text:#f1f5f9;--muted:#94a3b8;--border:#1e293b;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
+header{background:var(--bg2);border-bottom:1px solid var(--border);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.logo{font-size:1.3rem;font-weight:800;color:var(--accent);}
+nav a{margin-left:1.5rem;color:var(--muted);font-size:.9rem;}nav a:hover{color:var(--text);}
+.hero{background:linear-gradient(135deg,#0a0f1a 0%,#001525 100%);padding:5rem 2rem;text-align:center;border-bottom:1px solid var(--border);}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.2;margin-bottom:1rem;}
+.hero h1 span{color:var(--accent);}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:600px;margin:0 auto;}
+.badge{display:inline-block;background:rgba(2,132,199,.15);color:var(--accent);padding:.3rem .8rem;border-radius:99px;font-size:.8rem;font-weight:600;margin-bottom:1rem;border:1px solid rgba(2,132,199,.3);}
+.container{max-width:1200px;margin:0 auto;padding:3rem 2rem;}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:2rem;}
+@media(max-width:768px){.grid{grid-template-columns:1fr;}}
+h2.section-title{font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;}
+.article-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;transition:border-color .2s;}
+.article-card:hover{border-color:var(--accent);}
+.article-card .tag{font-size:.75rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem;}
+.article-card h3{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;}
+.article-card p{color:var(--muted);font-size:.9rem;}
+.article-card .meta{font-size:.8rem;color:var(--muted);margin-top:.8rem;}
+.featured{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:2rem;margin-bottom:2rem;}
+.featured .label{font-size:.75rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem;}
+.featured h2{font-size:1.6rem;font-weight:800;margin-bottom:.5rem;}
+.featured .meta{color:var(--muted);font-size:.85rem;margin-bottom:1.5rem;}
+.featured-body h3{font-size:1.1rem;font-weight:700;margin:1.5rem 0 .5rem;color:var(--accent);}
+.featured-body p{color:#cbd5e1;margin-bottom:1rem;font-size:.95rem;}
+.featured-body ul,ol{color:#cbd5e1;font-size:.95rem;padding-left:1.5rem;margin-bottom:1rem;}
+.featured-body li{margin-bottom:.4rem;}
+code{background:var(--bg3);padding:.2em .5em;border-radius:4px;font-size:.85em;font-family:monospace;color:var(--accent);}
+.bot-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0;}
+@media(max-width:500px){.bot-grid{grid-template-columns:1fr;}}
+.bot-card{background:var(--bg3);border-radius:8px;padding:1rem;border-left:3px solid var(--accent);}
+.bot-card .name{font-weight:700;font-size:.9rem;}
+.bot-card .type{font-size:.75rem;color:var(--accent);font-weight:600;text-transform:uppercase;margin-bottom:.3rem;}
+.bot-card .desc{font-size:.8rem;color:var(--muted);}
+.sidebar-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;}
+.sidebar-card h3{font-size:1rem;font-weight:700;margin-bottom:1rem;}
+.hw-item{padding:.8rem 0;border-bottom:1px solid var(--border);}
+.hw-item:last-child{border-bottom:none;}
+.hw-item .hw-name{font-weight:600;font-size:.9rem;}
+.hw-item .hw-desc{font-size:.8rem;color:var(--muted);}
+.hw-item .hw-price{font-size:.85rem;color:var(--accent);font-weight:600;}
+.faq-section{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:2rem;margin-top:2rem;}
+.faq-section h2{font-size:1.3rem;font-weight:700;margin-bottom:1.5rem;}
+.faq-item{margin-bottom:1.5rem;}
+.faq-item h3{font-size:1rem;font-weight:600;margin-bottom:.5rem;color:var(--accent);}
+.faq-item p{font-size:.9rem;color:var(--muted);}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--muted);font-size:.85rem;}
 </style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Blog","name":"OpenClaw Telegram","url":"https://openclaw-telegram.com"},
+    {"@type":"BlogPosting","headline":"Best Telegram AI Bots in 2026","url":"https://openclaw-telegram.com/#featured","datePublished":"2026-01-28","author":{"@type":"Person","name":"OpenClaw Telegram Editorial"}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What's the best Telegram AI bot?","acceptedAnswer":{"@type":"Answer","text":"For a self-hosted, private AI bot that runs on your own hardware, OpenClaw (ClawBox) is the top choice — it gives you a personal Telegram bot connected to local AI models. For public hosted bots, Claude, Gemini, and various third-party bots offer good capabilities."}},
+      {"@type":"Question","name":"Can I run my own Telegram bot for free?","acceptedAnswer":{"@type":"Answer","text":"Yes — Telegram bot creation is free via @BotFather. The cost comes from the AI backend. With a local setup using Ollama and python-telegram-bot, you can run a capable AI bot at zero ongoing cost, just electricity."}}
+    ]}
+  ]
+}
+</script>
 </head>
 <body>
+<header>
+  <div class="logo">✈️ OpenClaw Telegram</div>
+  <nav><a href="#articles">Articles</a><a href="#bots">Bot List</a><a href="#faq">FAQ</a></nav>
+</header>
 <section class="hero">
-<div class="hero-text">
-<h1>AI Assistant in <span>Telegram</span></h1>
-<p class="subtitle">Connect ClawBox to Telegram and get a 24/7 AI assistant that manages emails, automates browsers, controls smart home — all from your chat.</p>
-<div class="hero-cta">
-<a href="https://openclawhardware.dev" class="btn-primary">Buy ClawBox — €549</a>
-<a href="https://openclawhardware.dev/faq" class="btn-secondary">Learn More</a>
-</div>
-<p class="hero-micro"><span>✓ 30-day money-back guarantee</span> · Free shipping available · No subscriptions</p>
-</div>
-<div class="hero-image">
-<img src="https://openclawhardware.dev/clawbox-3.webp" alt="ClawBox AI Hardware Device" width="500" height="400" loading="eager">
-</div>
+  <div class="badge">Telegram AI Automation</div>
+  <h1>AI That Lives in<br><span>Your Telegram</span></h1>
+  <p>The best Telegram AI bots, guides to building your own, and tutorials for automating your life through the world's most capable messaging platform.</p>
 </section>
-<div class="trust-bar"><div class="items"><span>⚡ 67 TOPS AI</span><span>💾 512GB NVMe</span><span>🔌 20W Power</span><span>🛡️ Carbon Fiber</span><span>💰 €549 One-Time</span></div></div>
-<section class="section">
-<h2 class="section-title">Why ClawBox?</h2>
-<p class="section-sub">Everything you need for private, always-on AI — in one beautiful box.</p>
-<div class="features"><div class="feature"><div class="icon">💬</div><h3>Chat-Based Control</h3><p>Send natural language commands via Telegram. 'Check my email', 'What's the weather', 'Order status for X'.</p></div>
-<div class="feature"><div class="icon">🎤</div><h3>Voice In, Voice Out</h3><p>Send voice messages, get voice replies. Whisper STT + Kokoro TTS run locally — 100% private.</p></div>
-<div class="feature"><div class="icon">📧</div><h3>Email Management</h3><p>Read, draft, and send emails through Telegram. Get alerts for important messages.</p></div>
-<div class="feature"><div class="icon">🌐</div><h3>Browser Automation</h3><p>Automate any website from Telegram. 'Fill out the form on X', 'Screenshot Y website'.</p></div>
-<div class="feature"><div class="icon">📊</div><h3>Proactive Alerts</h3><p>ClawBox monitors your inbox, websites, prices — sends you Telegram alerts when something needs attention.</p></div>
-<div class="feature"><div class="icon">🏠</div><h3>Smart Home Voice</h3><p>Control lights, thermostat, locks through Telegram voice messages. Works with Home Assistant.</p></div></div>
-</section>
-<section class="section">
-<div class="proof">
-<h2 class="section-title" style="margin-bottom:32px">What Customers Say</h2>
-<div class="reviews"><div class="review"><div class="stars">★★★★★</div><p>"Best tech purchase I've made in years. The AI runs 24/7 and barely uses any power."</p><cite>— Marco P., Italy</cite></div>
-<div class="review"><div class="stars">★★★★★</div><p>"Setup was genuinely 5 minutes. Now it manages my emails and smart home. Incredible."</p><cite>— Sarah K., Germany</cite></div>
-<div class="review"><div class="stars">★★★★★</div><p>"Finally, private AI that actually works. No more sending my data to the cloud."</p><cite>— James L., UK</cite></div></div>
+<div class="container">
+  <div class="grid">
+    <main>
+      <div class="featured">
+        <div class="label">📌 Featured</div>
+        <h2>Best Telegram AI Bots in 2026</h2>
+        <div class="meta">January 28, 2026 · 8 min read · Reviews</div>
+        <div class="featured-body">
+          <p>Telegram has become the preferred interface for AI power users. Its bot API is mature, the app runs natively on every platform, supports voice messages, files, and inline buttons — and critically, it's available in countries where other services are restricted. Here's a look at the AI bots worth your time in 2026.</p>
+
+          <h3>Category 1: Hosted AI Bots (No Setup)</h3>
+          <div class="bot-grid" id="bots">
+            <div class="bot-card"><div class="type">Cloud</div><div class="name">@GeminiBot</div><div class="desc">Google's official Gemini bot. Strong reasoning, free tier available, integrates with Google services</div></div>
+            <div class="bot-card"><div class="type">Cloud</div><div class="name">@UseGPT_me_bot</div><div class="desc">ChatGPT wrapper. Popular, reliable, subscription required for GPT-4</div></div>
+            <div class="bot-card"><div class="type">Cloud</div><div class="name">@YouBot</div><div class="desc">You.com's bot. Web search + AI answers. Free with limits.</div></div>
+            <div class="bot-card"><div class="type">Cloud</div><div class="name">@AskSageAI_bot</div><div class="desc">Multiple model access in one bot. Claude, GPT, Mistral via one interface</div></div>
+          </div>
+          <p>The limitation of all hosted bots: your data goes to third-party servers, there are usually rate limits or subscription requirements, and you're dependent on their infrastructure and policies. They're convenient, but not yours.</p>
+
+          <h3>Category 2: Self-Hosted Telegram Bots</h3>
+          <p>The most capable Telegram AI experience comes from running your own bot connected to your own AI backend. The setup is more involved, but you get complete control, no rate limits, and total privacy.</p>
+          <p>The typical self-hosted Telegram AI stack:</p>
+          <ul>
+            <li><strong>Telegram Bot:</strong> Created via @BotFather — free, takes 2 minutes</li>
+            <li><strong>AI Backend:</strong> Ollama or a cloud API — runs on your hardware or a VPS</li>
+            <li><strong>Bot Framework:</strong> python-telegram-bot or aiogram (Python) — handles message routing</li>
+            <li><strong>Hosting:</strong> Your home server, Raspberry Pi, or a small VPS</li>
+          </ul>
+          <p>The most powerful version of this: a dedicated AI appliance with Telegram integration built in. Devices like ClawBox ship with a personal Telegram bot pre-configured — you scan a QR code and it's your bot, running on your hardware, responding from your home network.</p>
+
+          <h3>Category 3: Group Automation Bots</h3>
+          <p>Beyond personal AI assistants, Telegram bots shine for group automation — moderating communities, summarizing long threads, answering common questions, or acting as a smart FAQ for a team or club. Self-hosted bots are particularly useful here because you can customize the system prompt and knowledge base completely.</p>
+
+          <h3>Building Your First Telegram AI Bot: Quick Overview</h3>
+          <ol>
+            <li>Open @BotFather in Telegram, send <code>/newbot</code>, follow the prompts, get your API token</li>
+            <li>Install: <code>pip install python-telegram-bot ollama</code></li>
+            <li>Write a Python script that handles messages and calls Ollama's API</li>
+            <li>Run it on a machine that's always on (VPS, Raspberry Pi, home server)</li>
+          </ol>
+          <p>This basic setup gets you a working AI bot in under an hour. The OpenClaw framework handles all of this (and much more) automatically, which is why it's a popular choice for people who want results without writing code.</p>
+
+          <h3>Telegram-Specific Features Worth Using</h3>
+          <ul>
+            <li><strong>Voice messages:</strong> Send voice, bot transcribes and responds. Perfect for hands-free use.</li>
+            <li><strong>Inline keyboards:</strong> Bots can present option buttons — great for "yes/no" confirmations on automations</li>
+            <li><strong>File handling:</strong> Send a PDF to your bot, ask it to summarize</li>
+            <li><strong>Groups and channels:</strong> Add your bot as an admin for team/community automation</li>
+            <li><strong>Scheduled messages:</strong> Bot can send proactive messages at set times (morning briefing, reminders)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="articles">
+        <h2 class="section-title">More Guides</h2>
+        <div class="article-card">
+          <div class="tag">Tutorial</div>
+          <h3>How to Build a Telegram AI Assistant from Scratch</h3>
+          <p>A complete code walkthrough: creating a bot with @BotFather, connecting it to Ollama, handling text and voice messages, adding conversation history, and deploying it on a Raspberry Pi or VPS. Includes the full Python code.</p>
+          <div class="meta">February 3, 2026 · 12 min read</div>
+        </div>
+        <div class="article-card">
+          <div class="tag">Ideas</div>
+          <h3>Automate Your Life with Telegram Bots: 20 Ideas</h3>
+          <p>From morning briefings to price trackers, travel planners to smart home control — 20 practical automation ideas you can build with a Telegram bot and a local AI. Includes complexity ratings and estimated setup times for each.</p>
+          <div class="meta">January 20, 2026 · 7 min read</div>
+        </div>
+      </div>
+
+      <div class="faq-section" id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+          <h3>What's the best Telegram AI bot?</h3>
+          <p>For a private bot running on your own hardware, OpenClaw (ClawBox) is the top choice. For public hosted bots, Google's Gemini Bot and Claude-based bots offer strong capabilities with free tiers.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I run my own Telegram bot for free?</h3>
+          <p>Yes — bot creation via @BotFather is free. With Ollama local AI, you can run a capable AI bot at zero ongoing cost beyond electricity.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is Telegram safe for an AI assistant?</h3>
+          <p>Telegram encrypts in transit. For maximum privacy, use a self-hosted bot where your data only goes to your own hardware — messages go through Telegram's servers to reach your bot, but the AI processing happens locally.</p>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="sidebar-card">
+        <h3>🖥️ Run Your Own AI Bot</h3>
+        <div class="hw-item">
+          <div class="hw-name">ClawBox</div>
+          <div class="hw-desc">Personal Telegram bot pre-configured. Scan QR → it's yours. Responds with voice, handles files, emails, web tasks. No coding required.</div>
+          <div class="hw-price">€549 · openclawhardware.dev</div>
+        </div>
+        <div class="hw-item">
+          <div class="hw-name">DIY: Raspberry Pi 5 + Ollama</div>
+          <div class="hw-desc">Budget self-hosted path. 2-4 hours setup. python-telegram-bot library makes it accessible.</div>
+          <div class="hw-price">~€80 for Pi 5</div>
+        </div>
+        <div class="hw-item">
+          <div class="hw-name">VPS (Contabo, Hetzner)</div>
+          <div class="hw-desc">Cloud-hosted bot. No home hardware needed, but AI runs on remote server. €5-15/month.</div>
+          <div class="hw-price">~€5-15/month</div>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <h3">🔗 Useful Resources</h3>
+        <p style="font-size:.85rem;color:var(--muted);line-height:2.5;">
+          <a href="https://core.telegram.org/bots">Telegram Bot API Docs</a><br>
+          <a href="https://github.com/python-telegram-bot/python-telegram-bot">python-telegram-bot</a><br>
+          <a href="https://ollama.com">Ollama</a><br>
+          <a href="https://t.me/BotFather">@BotFather</a>
+        </p>
+      </div>
+    </aside>
+  </div>
 </div>
-</section>
-<section class="section">
-<h2 class="section-title">Frequently Asked Questions</h2>
-<p class="section-sub">Got questions? We've got answers.</p>
-<div class="faqs"><div class="faq"><h3>How does OpenClaw work with Telegram?</h3><p>ClawBox connects to Telegram as a bot. Send messages, voice notes, or commands — it responds with AI-powered answers, automates tasks, and sends proactive alerts.</p></div>
-<div class="faq"><h3>Can it handle voice messages?</h3><p>Yes! On-device Whisper STT processes your voice messages locally (90+ languages). Responds with voice via Kokoro TTS. Your audio never leaves the device.</p></div>
-<div class="faq"><h3>Do I need a Telegram bot?</h3><p>ClawBox creates and manages the bot automatically during 5-minute setup. Just scan the QR code.</p></div></div>
-</section>
-<section class="section">
-<div class="cta-box">
-<h2>Ready to Own Your AI?</h2>
-<div class="price">€549</div>
-<p class="price-sub">One-time purchase · No subscriptions · 30-day money-back guarantee</p>
-<a href="https://openclawhardware.dev" class="btn-primary">Order ClawBox Now</a>
-<p style="margin-top:16px;font-size:.85rem;color:#6b7280">Ships from EU via DHL Express · Worldwide delivery</p>
-</div>
-</section>
-<footer>
-<p>ClawBox by <a href="https://openclawhardware.dev">OpenClaw Hardware</a> · NVIDIA Jetson Orin Nano · Made with ❤️ in Bulgaria</p>
-<p style="margin-top:8px"><a href="https://openclawhardware.dev/faq">FAQ</a> · <a href="https://openclawhardware.dev/shipping">Shipping</a> · <a href="https://discord.gg/FbKmnxYnpq">Discord</a> · <a href="mailto:yanko@idrobots.com">Contact</a></p>
-</footer>
-</body>
-</html>
+<footer><p>© 2026 OpenClaw Telegram · Telegram AI Automation Guides · <a href="mailto:hello@openclaw-telegram.com">Contact</a></p></footer>
+</body></html>

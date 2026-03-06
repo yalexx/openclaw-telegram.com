@@ -1,1 +1,1 @@
-clawbox1
+ClawBox: Telegram AI Bot on Your Own Hardware | openclawhardware.dev
